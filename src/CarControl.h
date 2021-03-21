@@ -69,11 +69,11 @@ void controlDrive()
   // throttle values after subtracting 49:
   //     50 = max forward throttle
   //     0 = no throttole
-  //     -49 = max reverse throttle
+  //     -50 = max reverse throttle
   // steering values after subtracting 49:
   //     50 = max right
   //     0 = straight
-  //     -49 = max left
+  //     -50 = max left
 
   int throttle = map(yAxis, minAxis, maxAxis, minThrottle, maxThrottle);
   int steering = map(xAxis, minAxis, maxAxis, leftSteering, rightSteering);

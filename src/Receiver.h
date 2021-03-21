@@ -3,12 +3,10 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-// Pins to Radio
 #define CE_PIN 10
 #define CSN_PIN 9
 
-// NOTE: the "LL" at the end of the constant is "LongLong" type
-const uint64_t pipe = 0xE8E8F0F0E1LL; // Define the transmit pipe
+const uint64_t pipe = 0xE8E8F0F0E1LL;
 const int maxAxis = 660;
 const int minAxis = 0;
 
@@ -17,7 +15,6 @@ bool receiverDebug = false;
 RF24 radio(CE_PIN, CSN_PIN);
 int joystick[9];
 
-// the four button variables from joystick
 int xAxis, yAxis;
 int BUTTON_A;
 int BUTTON_B;
